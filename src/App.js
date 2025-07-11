@@ -8,7 +8,7 @@ function App() {
     if (window.electronAPI?.onMenuAction) {
       window.electronAPI.onMenuAction(async (_event, action) => {
         if (action === 'new') {
-          if (window.confirm("Start a new file? Unsaved changes will be lost.")) {
+          if (window.confirm("Start a new file? Unsaved changes will be lost.Please Confirm for changes!!")) {
             setText('');
             setFilePath(null);
           }
